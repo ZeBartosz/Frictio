@@ -11,7 +11,7 @@ import { ThemedView } from "@/components/themed-view";
 import { Link } from "expo-router";
 
 export default function HomeScreen() {
-  const user = useQuery(api.getUser.default || []);
+  const user = useQuery(api.getUser.default);
 
   return (
     <ParallaxScrollView
